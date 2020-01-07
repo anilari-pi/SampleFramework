@@ -10,6 +10,7 @@
 		041B9D2823C450B800C0F20D /* SimpleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041B9D1E23C450B800C0F20D /* SimpleFramework.framework */; };
 		041B9D2D23C450B800C0F20D /* SimpleFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B9D2C23C450B800C0F20D /* SimpleFrameworkTests.swift */; };
 		041B9D2F23C450B800C0F20D /* SimpleFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 041B9D2123C450B800C0F20D /* SimpleFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		041B9D3923C450D100C0F20D /* SampleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B9D3823C450D100C0F20D /* SampleManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		041B9D2723C450B800C0F20D /* SimpleFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		041B9D2C23C450B800C0F20D /* SimpleFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleFrameworkTests.swift; sourceTree = "<group>"; };
 		041B9D2E23C450B800C0F20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041B9D3823C450D100C0F20D /* SampleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				041B9D2123C450B800C0F20D /* SimpleFramework.h */,
 				041B9D2223C450B800C0F20D /* Info.plist */,
+				041B9D3823C450D100C0F20D /* SampleManager.swift */,
 			);
 			path = SimpleFramework;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					041B9D1D23C450B800C0F20D = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					041B9D2623C450B800C0F20D = {
 						CreatedOnToolsVersion = 11.3;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041B9D3923C450D100C0F20D /* SampleManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		041B9D3323C450B800C0F20D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = peoplegroup.SimpleFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +370,7 @@
 		041B9D3423C450B800C0F20D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +394,7 @@
 		041B9D3623C450B800C0F20D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SimpleFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +412,7 @@
 		041B9D3723C450B800C0F20D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SimpleFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

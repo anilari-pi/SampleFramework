@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+public class SampleManager {
+    public init() {
+        
+    }
+    
+    public func fetchData() {
+        
+    }
+}
